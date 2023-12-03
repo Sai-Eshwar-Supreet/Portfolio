@@ -7,21 +7,21 @@ export default function NavBar(){
     return(
         <>
             <div className='nav-bar'>
-                <Link className='logo' to="/Portfolio/home">Sai Eshwar Supreet</Link>
+                <Link className='logo' to="/">Sai Eshwar Supreet</Link>
                 <nav>
-                    <NavLink  activeclassname="active"  className="home-link" to="/Portfolio/home" >
+                    <NavLink exact="true" activeclassname="active"  className="home-link" to="/" >
                         <FontAwesomeIcon icon={faHome} />
                     </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="about-link" to="/Portfolio/about" >
+                    <NavLink exact="true" activeclassname="active" className="about-link" to="/about" >
                         <FontAwesomeIcon icon={faUser} />
                     </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="projects-link" to="/Portfolio/projects" >
+                    <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects" >
                         <FontAwesomeIcon icon={faGamepad} />
                     </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="resume-link" to="/Portfolio/resume" >
+                    <NavLink exact="true" activeclassname="active" className="resume-link" to="/resume" >
                         <FontAwesomeIcon icon={faFileText} />
                     </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="contact-link" to="/Portfolio/contact" >
+                    <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" >
                         <FontAwesomeIcon icon={faEnvelope} />
                     </NavLink>
                 </nav>
