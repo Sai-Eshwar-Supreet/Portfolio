@@ -13,7 +13,7 @@ export default function Project2(){
                 <div className='project-details'>
                     <h1 className='heading'>Aruval Slasher</h1>
                     <h2 className='subheading'>Game Developer and Designer</h2>
-                    <div className='image-container'><img className='thumbnail' src={thumbnail} alt='thumbnail' /></div>
+                    <div className='image-container'><img className='thumbnail' src={thumbnail} alt='thumbnail' loading='lazy'/></div>
                 </div>
                 <div className='project-details'>
                     <h1 className='heading'>What I did!</h1>
