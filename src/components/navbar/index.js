@@ -7,12 +7,12 @@ export default function NavBar(){
     return(
         <>
             <div className='nav-bar'>
-                <Link className='logo' to="/Portfolio">Sai Eshwar Supreet</Link>
+                <Link className='logo' to="/Portfolio/">Sai Eshwar Supreet</Link>
                 <nav>
-                    <NavLink exact="true" activeclassname="active" to="/Portfolio" >
+                    <NavLink exact="true" activeclassname="active" to="/Portfolio/" >
                         <FontAwesomeIcon icon={faHome} />
                     </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="about-link" to="/about" >
+                    <NavLink exact="true" activeclassname="active" className="about-link" to="/Portfolio/about" >
                         <FontAwesomeIcon icon={faUser} />
                     </NavLink>
                     <NavLink exact="true" activeclassname="active" className="projects-link" to="/Portfolio/projects" >
