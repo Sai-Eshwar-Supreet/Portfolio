@@ -2,10 +2,10 @@ import  './index.scss';
 import thumbnail from '../../../assets/Projects/Aruval-slasher/thumbnail-as.png';
 import gameMusic from '../../../assets/Projects/Aruval-slasher/GameMusic.wav';
 import GifElement from '../../Elements/gifElement';
-import img1 from '../../../assets/Projects/Aruval-slasher/img1.gif';
-import img2 from '../../../assets/Projects/Aruval-slasher/img2.gif';
-import img3 from '../../../assets/Projects/Aruval-slasher/img3.gif';
-import img4 from '../../../assets/Projects/Aruval-slasher/img4.gif';
+import img1 from '../../../assets/Projects/Aruval-slasher/img1.png';
+import img2 from '../../../assets/Projects/Aruval-slasher/img2.png';
+import img3 from '../../../assets/Projects/Aruval-slasher/img3.png';
+import img4 from '../../../assets/Projects/Aruval-slasher/img4.png';
 export default function Project2(){
     return(
         <>

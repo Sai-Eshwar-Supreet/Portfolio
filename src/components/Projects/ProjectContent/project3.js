@@ -1,10 +1,10 @@
 import  './index.scss';
 import thumbnail from '../../../assets/Projects/Robo-run-roo/thumbnail-rrr.png';
 import GifElement from '../../Elements/gifElement';
-import img1 from '../../../assets/Projects/Robo-run-roo/img1.gif';
-import img2 from '../../../assets/Projects/Robo-run-roo/img2.gif';
-import img3 from '../../../assets/Projects/Robo-run-roo/img3.gif';
-import img4 from '../../../assets/Projects/Robo-run-roo/img4.gif';
+import img1 from '../../../assets/Projects/Robo-run-roo/img1.png';
+import img2 from '../../../assets/Projects/Robo-run-roo/img2.png';
+import img3 from '../../../assets/Projects/Robo-run-roo/img3.png';
+import img4 from '../../../assets/Projects/Robo-run-roo/img4.png';
 export default function Project3(){
     return(
         <>

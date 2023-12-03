@@ -1,10 +1,10 @@
 import  './index.scss';
 import thumbnail from '../../../assets/Projects/Quirky-of-diceville/thumbnail-qod.png';
 import GifElement from '../../Elements/gifElement';
-import img1 from '../../../assets/Projects/Quirky-of-diceville/img1.gif';
-import img2 from '../../../assets/Projects/Quirky-of-diceville/img2.gif';
-import img3 from '../../../assets/Projects/Quirky-of-diceville/img3.gif';
-import img4 from '../../../assets/Projects/Quirky-of-diceville/img4.gif';
+import img1 from '../../../assets/Projects/Quirky-of-diceville/img1.png';
+import img2 from '../../../assets/Projects/Quirky-of-diceville/img2.png';
+import img3 from '../../../assets/Projects/Quirky-of-diceville/img3.png';
+import img4 from '../../../assets/Projects/Quirky-of-diceville/img4.png';
 export default function Project1(){
     return(
         <>
