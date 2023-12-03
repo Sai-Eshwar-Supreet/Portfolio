@@ -12,7 +12,7 @@ export default function NavBar(){
                     <NavLink exact="true" activeclassname="active" to="/Portfolio" >
                         <FontAwesomeIcon icon={faHome} />
                     </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="about-link" to="/Portfolio/about" >
+                    <NavLink exact="true" activeclassname="active" className="about-link" to="/about" >
                         <FontAwesomeIcon icon={faUser} />
                     </NavLink>
                     <NavLink exact="true" activeclassname="active" className="projects-link" to="/Portfolio/projects" >
