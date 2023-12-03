@@ -1,0 +1,34 @@
+@import 'animate.css';
+@import 'colors';
+@import 'fonts';
+@import '~loaders.css/src/animations/pacman.scss';
+
+input, textarea{
+  font-family: $body-font;
+}
+
+.loader-active{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 70px;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
+.pacman{
+  div:first-of-type{
+    border-color: $quaternary-color;
+    border-right-color: transparent;
+    z-index: 2;
+  }
+  div:nth-child(2){
+    border-color: $quaternary-color;
+    border-right-color: transparent;
+    z-index: 2;
+  }
+}

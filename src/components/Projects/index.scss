@@ -1,0 +1,83 @@
+@import '../../colors.scss';
+.projects-browser{
+    width: 100vw;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    scroll-snap-type: x proximity;
+    opacity: 0;
+    animation: fadeIn 1s 1.2s;
+    animation-fill-mode: forwards;
+    .project{
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 70px);
+        width: 100%;
+        scroll-snap-align: start;
+        animation: pulse 1s 1.2s;
+        animation-fill-mode: forwards;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 974px;
+            border: 2px solid $primary-color;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                border-width: 5px;
+                border-radius: 50px;
+                border-color: $quinary-color ;
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                width: 100%;
+                transition: all 0.3s ease-out;
+            }
+        }
+
+        h1{
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        div,h1{
+            @media (max-width:1000px) {
+                width: 600px;
+            }
+            @media (max-width:600px) {
+                font-size: 16px;
+                width: 400px;
+            }
+            @media (max-width:400px) {
+                width: 300px;
+            }
+            @media (max-width:300px) {
+                width: 250px;
+            }
+        }
+    }
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: $quinary-color;
+    border: 5px solid $tertiary-color;
+}
+
+::-webkit-scrollbar-track{
+    border: 7px solid $tertiary-color;
+    background: #{$primary-color}55;
+    border-radius: 25px;
+    margin: 10px 50px;
+}

@@ -1,0 +1,61 @@
+@import '../../colors.scss';
+@import '../../fonts.scss';
+
+.home-page{
+    .text-zone{
+        width: 595px;
+        max-height: 100%;
+        transition: all 0.3s ease-out;
+        @media (max-width:620px) {
+            width: 360px;
+        }
+    }
+    h1{
+        cursor: default;
+        text-align: center;
+        color: $primary-color;
+        font-size: 48px;
+        font-family: $body-font;
+        .dev-name{
+            margin-left: 20px;
+            height: auto;
+        }
+    }
+    h2{
+        cursor: default;
+        text-align: center;
+        color: $secondary-color;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 15px;
+        font-family: $fallback-font;
+        letter-spacing: 3px;
+        animation: fadeIn 2s 3.2s backwards;
+    }
+}
+
+
+
+.flat-button{
+    color: $quinary-color;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: $fallback-font;
+    text-decoration: none;
+    padding: 10px 18px;
+    background: $tertiary-color;
+    border: 1px solid $quinary-color;
+    margin-top: 25px;
+    float: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeIn 2.5s 3.2s backwards;
+    white-space: nowrap;
+
+    &:hover{
+        background: $quinary-color;
+        color: $tertiary-color;
+    }
+}

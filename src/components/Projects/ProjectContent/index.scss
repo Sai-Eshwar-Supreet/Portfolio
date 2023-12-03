@@ -1,0 +1,167 @@
+@import '../../../colors.scss';
+@import '../../../fonts.scss';
+
+.project-window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    opacity: 0;
+    animation: fadeInDown 1s;
+    animation-fill-mode: forwards;
+
+    .project-details {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        scroll-snap-align: start;
+        .heading{
+            text-align: center;
+            font-family: $header-font;
+            border-bottom: 2px solid $primary-color;
+        }
+        .subheading{
+            text-align: center;
+            font-family: $header-font;
+            color: #{$primary-color}55;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .content{
+            font-family: $fallback-font;
+            font-size: 20px;
+            
+            width: 974px;
+            li{
+                p{
+                    display: inline;
+                }
+                a{
+                    color: inherit;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }  
+            }
+        }
+        .content::marker{
+            display: none;
+        }
+        .image-container, .video-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 974px;
+            border: 2px solid $primary-color;
+            border-radius: 50px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            .thumbnail{
+                width: 100%;
+            }
+        }
+
+        .gallery{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 974px;
+            overflow: hidden;
+            .gif-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                .gif{
+                    width:100%;
+                    
+                    animation-play-state: paused;
+                    &:hover {
+                        animation-play-state: running;
+                    }
+                }
+            }
+        }
+
+        .video-container{
+            height: 400px;
+            .video{
+                height: inherit;
+                width: 100%;
+            }
+        }
+        
+        audio{
+            width: 90%;
+        }
+
+        .heading,.subheading,.image-container, .video-container, .content, .gallery{
+            @media (max-width:1000px) {
+                width: 600px;
+            }
+            @media (max-width:600px) {
+                font-size: 16px;
+                width: fit-content;
+            }
+            @media (max-width:400px) {
+                font-size: 14px;
+                width: 300px;
+            }
+            @media (max-width:300px) {
+                font-size: 12px;
+                width: 250px;
+            }
+        }
+        .gallery{
+            vertical-align: middle;
+            @media(max-width:600px){
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                .gif-container{
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        &:nth-child(even) {
+            font-size: 25px;
+            background-color: $primary-color;
+            color: $tertiary-color;
+        }
+    }
+}
+
+.project-window::-webkit-scrollbar{
+    display: none;
+}
+audio::-webkit-media-controls-panel{
+    background-color: $quinary-color;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: $primary-color;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-current-time-displayaudio::-webkit-media-controls-time-remaining-display{
+    color: $primary-color;
+}
+audio::-webkit-media-controls-timeline{
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color: $primary-color;
+}audio::-webkit-media-controls-volume-slider{
+    background-color: $primary-color;
+    border-radius: 50px;
+    padding: 15px;
+}
+audio::-webkit-media-controls-mute-button{
+    background-color: $primary-color;
+    border-radius: 50%;
+}

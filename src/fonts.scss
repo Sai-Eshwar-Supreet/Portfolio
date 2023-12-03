@@ -1,0 +1,15 @@
+$header-font: 'header-font';
+$body-font: 'body-font';
+$fallback-font: sans-serif;
+
+
+@font-face {
+    font-family: $header-font;
+    src: url('./assets/fonts/Montserrat.ttf') format("ttf");
+}
+
+@font-face {
+    font-family: $body-font;
+    src: url('./assets/fonts/NunitoSans.ttf') format("ttf");
+}
+  
