@@ -7,14 +7,9 @@ export default function NavBar(){
     return(
         <>
             <div className='nav-bar'>
-                <Link className='logo' to="/Portfolio/">Sai Eshwar Supreet</Link>
+                <Link className='logo' to="/Portfolio/home">Sai Eshwar Supreet</Link>
                 <nav>
-                    <NavLink 
-                        activeclassname="active" 
-                        className="home-link" 
-                        to="/Portfolio/" 
-                        aria-current={window.location.pathname === '/Portfolio/' ? 'page' : undefined}
-                    >
+                    <NavLink  activeclassname="active"  className="home-link" to="/Portfolio/home" >
                         <FontAwesomeIcon icon={faHome} />
                     </NavLink>
                     <NavLink exact="true" activeclassname="active" className="about-link" to="/Portfolio/about" >

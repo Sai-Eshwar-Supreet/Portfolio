@@ -15,7 +15,7 @@ function App() {
     <>
       <Routes>
         <Route path='/Portfolio' element={<Layout/>} >
-          <Route index element={<Home/>} />
+          <Route index path='home' element={<Home/>} />
           <Route path='about' element={<About/>} />
           <Route path='projects' element={<Projects/>} />
           <Route path='resume' element={<Resume/>} />
@@ -23,7 +23,6 @@ function App() {
           <Route path='projects/quirky-of-diceville' element={<Project1 />}/>
           <Route path='projects/aruval-slasher' element={<Project2 />}/>
           <Route path='projects/robo-run-roo' element={< Project3 />}/>
-          
         </Route>
       </Routes>
     </>

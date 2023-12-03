@@ -17,8 +17,18 @@ input, textarea{
   bottom: 70px;
   width: 50px;
   height: 50px;
-  animation: fadeOut 1s 1s;
+  animation: disable 1s 1s;
   animation-fill-mode: forwards;
+}
+@keyframes disable {
+  from{
+    opacity: 1;
+    display: block;
+  }
+  to{
+    opacity: 0;
+    display: none;
+  }
 }
 .pacman{
   div:first-of-type{
