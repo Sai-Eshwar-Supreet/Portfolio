@@ -20,9 +20,9 @@ function App() {
           <Route path='projects' element={<Projects/>} />
           <Route path='resume' element={<Resume/>} />
           <Route path='contact' element={<Contact/>} />
-          <Route path='quirky-of-diceville' element={<Project1 />}/>
-          <Route path='aruval-slasher' element={<Project2 />}/>
-          <Route path='robo-run-roo' element={< Project3 />}/>
+          <Route path='projects/quirky-of-diceville' element={<Project1 />}/>
+          <Route path='projects/aruval-slasher' element={<Project2 />}/>
+          <Route path='projects/robo-run-roo' element={< Project3 />}/>
           
         </Route>
       </Routes>
