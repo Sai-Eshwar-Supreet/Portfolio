@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.154dbc9e.css",
-    "main.js": "/Portfolio/static/js/main.6204bb56.js",
+    "main.css": "/Portfolio/static/css/main.efaa0edd.css",
+    "main.js": "/Portfolio/static/js/main.76df4bf3.js",
     "static/js/787.7a0a5b18.chunk.js": "/Portfolio/static/js/787.7a0a5b18.chunk.js",
     "static/media/GameMusic.wav": "/Portfolio/static/media/GameMusic.2f71831b069f4df84adb.wav",
     "static/media/img1.gif": "/Portfolio/static/media/img1.9ee79c80ae92c950e126.gif",
@@ -15,12 +15,12 @@
     "static/media/Resume.pdf": "/Portfolio/static/media/Resume.f138ab3ae3c95cafa60d.pdf",
     "static/media/Montserrat.ttf": "/Portfolio/static/media/Montserrat.7e687123cd4528224ce5.ttf",
     "index.html": "/Portfolio/index.html",
-    "main.154dbc9e.css.map": "/Portfolio/static/css/main.154dbc9e.css.map",
-    "main.6204bb56.js.map": "/Portfolio/static/js/main.6204bb56.js.map",
+    "main.efaa0edd.css.map": "/Portfolio/static/css/main.efaa0edd.css.map",
+    "main.76df4bf3.js.map": "/Portfolio/static/js/main.76df4bf3.js.map",
     "787.7a0a5b18.chunk.js.map": "/Portfolio/static/js/787.7a0a5b18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.154dbc9e.css",
-    "static/js/main.6204bb56.js"
+    "static/css/main.efaa0edd.css",
+    "static/js/main.76df4bf3.js"
   ]
 }
