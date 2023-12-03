@@ -9,7 +9,7 @@ export default function NavBar(){
             <div className='nav-bar'>
                 <Link className='logo' to="/Portfolio/">Sai Eshwar Supreet</Link>
                 <nav>
-                    <NavLink exact="true" activeclassname="active" to="/Portfolio/" >
+                    <NavLink exact="true" activeclassname="active" className="home-link" to="/Portfolio/" >
                         <FontAwesomeIcon icon={faHome} />
                     </NavLink>
                     <NavLink exact="true" activeclassname="active" className="about-link" to="/Portfolio/about" >
