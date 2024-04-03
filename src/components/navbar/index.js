@@ -18,7 +18,7 @@ export default function NavBar(){
                     <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects" >
                         <FontAwesomeIcon icon={faGamepad} />
                     </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="resume-link" to="/resume" >
+                    <NavLink exact="true" activeclassname="active" className="resume-link" to="/" >
                         <FontAwesomeIcon icon={faFileText} />
                     </NavLink>
                     <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" >
